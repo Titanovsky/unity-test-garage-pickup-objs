@@ -1202,6 +1202,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2818014a6a9457146b810249f7145c3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _minAngleX: -90
+  _maxAngleX: 90
+  _sens: 300
+  camera: {fileID: 0}
 --- !u!114 &1338644714
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1214,6 +1218,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1227dff325dbf6a4cbbc6dc080ddb907, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _char: {fileID: 1338644715}
+  _mouse: {fileID: 1338644713}
+  _speed: 25
 --- !u!143 &1338644715
 CharacterController:
   m_ObjectHideFlags: 0
