@@ -1,18 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Car : MonoBehaviour
+public class WarehouseCar : MonoBehaviour, IUsed 
 {
-    // Start is called before the first frame update
-    void Start()
+    public void Use(PlayerUse user)
     {
-        
-    }
+        if (!user.hasObj) return;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        user.hasObj = false;
+
+        Debug.Log("Put Obj in the car");
     }
 }

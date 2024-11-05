@@ -7,10 +7,12 @@ public class PlayerUse : MonoBehaviour
 
     [SerializeField] private PlayerMouse _mouse;
 
+    public bool hasObj = false;
+
     private void TraceUse()
     {
         if (_mouse == null) return;
-        if (!Input.GetKeyDown(KeyCode.E)) return;
+        if (!Input.GetKey(KeyCode.E)) return;
 
         RaycastHit hit;
 
@@ -18,7 +20,7 @@ public class PlayerUse : MonoBehaviour
         {
             if (hit.transform.TryGetComponent(out IUsed obj))
             {
-                obj.Use();
+                obj.Use(this);
             }
         }
     }

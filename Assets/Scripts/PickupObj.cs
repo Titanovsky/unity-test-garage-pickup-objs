@@ -4,20 +4,14 @@ using UnityEngine;
 
 public class PickupObj : MonoBehaviour, IUsed   
 {
-    public void Use()
+    public void Use(PlayerUse user)
     {
-        Debug.Log("dsas");
-    }
+        if (user.hasObj) return;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+        Destroy(gameObject);
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        user.hasObj = true;
+
+        Debug.Log("Take the obj");
     }
 }

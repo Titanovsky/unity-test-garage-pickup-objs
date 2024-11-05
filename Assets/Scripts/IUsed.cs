@@ -1,4 +1,4 @@
 public interface IUsed
 {
-    public void Use();
+    public void Use( PlayerUse user );
 }
