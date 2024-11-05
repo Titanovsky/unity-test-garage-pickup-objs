@@ -1,18 +1,23 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Restart : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private string _scene = "GarageScene";
+
+    private void RestartScene()
     {
-        
+        SceneManager.LoadScene(_scene);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void CheckInputs()
     {
-        
+        if (Input.GetKeyUp(KeyCode.Escape))
+            RestartScene();
+    }
+
+    private void Update()
+    {
+        CheckInputs();
     }
 }
