@@ -107,6 +107,7 @@ GameObject:
   - component: {fileID: 2589601106369892865}
   - component: {fileID: 1843758747575784878}
   - component: {fileID: 6014245273561564803}
+  - component: {fileID: 6119752760497047321}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -260,6 +261,19 @@ MonoBehaviour:
   _maxAngleX: 90
   _sens: 300
   camera: {fileID: 0}
+--- !u!114 &6119752760497047321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 844665778098598983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8972ebe50e597f24f86b8f294d225803, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _hitDistance: 72
 --- !u!1 &5944339085045665897
 GameObject:
   m_ObjectHideFlags: 0

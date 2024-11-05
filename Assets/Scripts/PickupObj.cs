@@ -2,8 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PickupObj : MonoBehaviour
+public class PickupObj : MonoBehaviour, IUsed   
 {
+    public void Use()
+    {
+        Debug.Log("dsas");
+    }
+
     // Start is called before the first frame update
     void Start()
     {
